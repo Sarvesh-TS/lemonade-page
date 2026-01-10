@@ -1,0 +1,21 @@
+<div class="connection-card">
+  <div class="rocket-icon">
+    <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+      <ellipse cx="40" cy="55" rx="30" ry="8" fill="#e8e5ff" opacity="0.6"/>
+      <path d="M40 10 L35 35 L30 40 L35 45 L40 70 L45 45 L50 40 L45 35 Z" fill="#4f46e5"/>
+      <circle cx="40" cy="25" r="6" fill="#c4b5fd"/>
+      <path d="M35 30 Q25 40 30 50" stroke="#e8e5ff" stroke-width="2" fill="none"/>
+      <path d="M45 30 Q55 40 50 50" stroke="#e8e5ff" stroke-width="2" fill="none"/>
+      <circle cx="32" cy="42" r="2" fill="#ddd6fe"/>
+      <circle cx="48" cy="42" r="2" fill="#ddd6fe"/>
+    </svg>
+  </div>
+
+  <h2 class="card-title">Let's Connect !</h2>
+
+  <ul class="instructions-list">
+    <li *ngFor="let instruction of instructions">
+      {{ instruction }}
+    </li>
+  </ul>
+</div>

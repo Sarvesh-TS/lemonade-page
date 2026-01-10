@@ -1,0 +1,22 @@
+<aside class="sidebar">
+  <div class="sidebar-header">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+      <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" fill="#1f2937"/>
+    </svg>
+    <span class="sidebar-title">Home</span>
+  </div>
+
+  <nav class="chapters-list">
+    <div
+      *ngFor="let chapter of chapters"
+      class="chapter-item"
+      [class.active]="chapter.active"
+    >
+      <div class="chapter-header">
+        <span class="chapter-number">Chapter {{ chapter.number }}</span>
+        <span class="chapter-duration">{{ chapter.duration }}</span>
+      </div>
+      <div class="chapter-title">{{ chapter.title }}</div>
+    </div>
+  </nav>
+</aside>
