@@ -1,7 +1,7 @@
 .sidebar {
   width: 240px;
   background: #f8f9fb;
-  border-right: 1px solid #e5e7eb;
+  border-right: none;
   padding: 20px 0;
   overflow-y: auto;
 
@@ -24,6 +24,30 @@
   align-items: center;
   gap: 10px;
   padding: 14px 14px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 70px;
+    width: 10px;
+    background: #3429CC;
+    opacity: 1;
+    transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 0;
+  }
+
+  &:hover {
+    background: #f3f4f6;
+
+    .sidebar-title {
+      color: #4f46e5;
+    }
+  }
 
   .home-icon {
     width: 24px;
@@ -35,6 +59,7 @@
     font-size: 16px;
     font-weight: 600;
     color: #1f2937;
+    transition: color 0.25s ease;
   }
 }
 
