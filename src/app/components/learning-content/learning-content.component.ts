@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ConnectionCardComponent } from '../connection-card/connection-card.component';
 
 @Component({
   selector: 'app-learning-content',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, ConnectionCardComponent],
   templateUrl: './learning-content.component.html',
   styleUrls: ['./learning-content.component.scss']
 })

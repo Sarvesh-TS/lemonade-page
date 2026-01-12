@@ -1,14 +1,19 @@
 <div class="learning-content">
-  <div class="logo-badge">
-    <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
-      <circle cx="30" cy="30" r="30" fill="#065f46"/>
-      <text x="30" y="38" text-anchor="middle" fill="white" font-size="10" font-weight="600" font-family="Arial">INSEAD</text>
-    </svg>
+  <div class="hero-card">
+    <div class="logo-badge">
+      <img src="assets/images/insead.png" alt="INSEAD" class="insead-logo">
+    </div>
+
+    <div class="text-content">
+      <h1 class="main-title">{{ title }}</h1>
+
+      <p class="subtitle">{{ subtitle }}</p>
+    </div>
+
+    <p class="authors">{{ authors }}</p>
+
+    <div class="connection-card-wrapper">
+      <app-connection-card></app-connection-card>
+    </div>
   </div>
-
-  <h1 class="main-title">{{ title }}</h1>
-
-  <p class="subtitle">{{ subtitle }}</p>
-
-  <p class="authors">{{ authors }}</p>
 </div>
