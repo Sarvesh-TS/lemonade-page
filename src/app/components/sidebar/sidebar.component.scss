@@ -161,10 +161,12 @@
   }
 
   .chapter-title {
+    font-family: Roboto, sans-serif;
     font-size: 14px;
-    font-weight: 500;
-    color: #1f2937;
-    line-height: 1.4;
+    font-weight: 400;
+    color: #0F0C3F;
+    line-height: 20px;
+    letter-spacing: 0;
     transition: color 0.25s ease;
   }
 }
